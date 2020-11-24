@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto';
+}
+
+body {
+    padding: 32px 300px;
+    position: relative;
+    align-items: center;
+
+    overflow-x: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header div{
+    padding: 32px;
+    display: flex;
+}
+
+h1 {
+    font-family: 'Roboto-Bold';
+    color: #111111;
+    padding: 50px;
+}
+
+.logo, .folders{
+    height: 100%;
+    padding-right: 75px;
+    font-size: 24px;
+    font-family: 'Roboto-Bold', sans-serif;
+
+}
+
+/* body */
+
+h3 {
+    margin: 20px 0 10px 0;
+}
+
+.about, .receitas{
+    font-family: 'Roboto-Regular';
+    text-align: justify;
+    font-size: 18px;
+    color: #444444;
+
+    line-height: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* footer */
+
+footer {
+    font-family: 'Roboto-Regular';
+    font-size: 24px;
+    color: #999999;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+
+    background-color: #EEEEEE;
+    padding: 23px;
+}
