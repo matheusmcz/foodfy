@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto';
+}
+
+body {
+  padding: 32px 300px;
+  position: relative;
+  align-items: center;
+
+  overflow-x: hidden;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+
+header div{
+  padding: 32px;
+  display: flex;
+}
+
+h1, h3 {
+  font-family: 'Roboto-Bold';
+  color: #111111;
+  padding: 30px;
+}
+
+
+
+
+.logo, .folders{
+  height: 100%;
+  padding-right: 75px;
+  font-size: 24px;
+  font-family: 'Roboto-Bold', sans-serif;
+
+}
+
+/* CARDS */
+
+.cards {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-bottom: 42px;
+  align-items: center;
+
+}
+
+.card {
+  display: grid;
+}
+
+.menuImg img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.menuTitle {
+  padding-top: 25px;
+  font-family: 'Roboto-Regular';
+  font-size: 28px;
+  color: #111111;
+  text-align: center;
+}
+
+.menuAuthor {
+  padding: 10px;
+  font-family: 'Roboto-Regular';
+  font-size: 24px;
+  color: #777777;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.menuIngredients {
+  padding: 10px;
+  font-family: 'Roboto-Regular';
+  font-size: 18px;
+  color: #111111;
+
+}
+
+.menuPreparation,
+.menuInformation {
+  padding: 10px;
+  font-family: 'Roboto-Regular';
+  font-size: 18px;
+  color: #111111;
+  text-align: justify;
+}
+
+
+
+/* footer */
+
+footer {
+  font-family: 'Roboto-Regular';
+  font-size: 24px;
+  color: #999999;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+
+  background-color: #EEEEEE;
+  padding: 23px;
+}
+
+
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+}

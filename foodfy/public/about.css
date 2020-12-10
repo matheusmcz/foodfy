@@ -9,7 +9,6 @@ body {
     padding: 32px 300px;
     position: relative;
     align-items: center;
-
     overflow-x: hidden;
 
     font-family: 'Montserrat', sans-serif;
@@ -50,6 +49,7 @@ h3 {
     line-height: 28px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 /* footer */
@@ -63,6 +63,7 @@ footer {
     display: flex;
     justify-content: center;
     position: absolute;
+    bottom: 0;
     left: 0;
     width: 100vw;
 

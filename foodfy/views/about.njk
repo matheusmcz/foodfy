@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/logo.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="/about.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+        <title>Sobre</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <img src="/logo.png" class="logo">
+                <a href="/" class="folders">Home</a>
+                <a href="/recipe" class="folders">Receitas</a>
+            </div>
+        </header>
+
+        <div class="about">
+            <div>
+                <h3>
+                    Sobre o Foodfy
+                </h3>
+                <p>
+                    {{ about.aboutFoodfy }}
+                </p>
+
+            </div>
+
+            <div>
+                <h3>
+                    Como tudo começou…
+                </h3>
+                <p>
+                    {{ about.start }}
+                </p>
+            </div>
+
+            <div>
+                <h3>
+                    Nossas receitas
+                </h3>
+
+                <p>
+                    {{ about.ourRecepies }}
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>{{ about.footer }}</p>
+        </footer>
+    </body>
+
+</html>

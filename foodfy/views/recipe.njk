@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/recepi.css">
+        <link rel="icon" href="/logo.ico" type="image/x-icon"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+        <title>Receitas</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <img src="/logo.png" class="logo">
+                <a href="/" class="folders">Home</a>
+                <a href="/about" class="folders">Sobre</a>
+            </div>
+        </header>
+        <section class="cards">
+            {% for item in receitas %}
+                <div class="card">
+                    <a class="menuImg" href="/aboutRecipe/{{ item.id }}">
+                        <img src="{{ item.image }}" class="cardImage">
+                    </a>
+
+                    <div class="menuDescription">
+                        {{ item.title }}
+                    </div>
+
+                    <div class="menuAuthor">
+                        {{ item.author }}
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
+
+        {# <div class="modal-overlay">
+            <div class="modal">
+
+                <div class="modal-content">
+                    <!-- IMAGE -->
+                </div>
+                <a class="close-modal">
+                    <i>Fechar Modal</i>
+                </a>
+            </div>
+        </div> #}
+
+        <footer>
+            <p>{{ recipe.footer }}</p>
+        </footer>
+
+        <script src="/index.js"></script>
+
+    </body>
+
+</html>

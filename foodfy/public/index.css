@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,12 +24,64 @@ header div{
     display: flex;
 }
 
+h1 {
+    font-family: 'Roboto-Bold';
+    color: #111111;
+    padding: 50px;
+}
+
+
+
+
 .logo, .folders{
     height: 100%;
     padding-right: 75px;
     font-size: 24px;
     font-family: 'Roboto-Bold', sans-serif;
 
+}
+
+
+/* frontPost */
+
+#frontPost {
+    display: flex;
+    position: relative;
+    padding: 0 100px 0 60px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frontPostText {
+    padding-right: 24px;
+    max-width: 416px;
+}
+
+.frontPostText :first-child {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 42px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.frontPostText p:last-of-type {
+    opacity: 0.7;
+    font-family: 'Roboto-Regular';
+    font-size: 28px;
+    color: #000000;
+    line-height: 28px;
+    /* padding-right: 70%; */
+    text-align: justify;
+    line-height: normal;
+}
+
+.banner {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 /* CARDS */
@@ -41,9 +95,14 @@ header div{
 
 }
 
+.card {
+    display: grid;
+}
+
 .menuImg img {
     width: 100%;
     border-radius: 15px;
+    height: 97.63px;
 }
 
 .menuDescription {
@@ -59,6 +118,7 @@ header div{
     font-size: 24px;
     color: #777777;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 /* MODAL */

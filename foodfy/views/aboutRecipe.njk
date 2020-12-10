@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/aboutRecipe.css">
+    <link rel="icon" href="/logo.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <title>Foodfy</title>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <img src="/logo.png" class="logo">
+        <a href="/" class="folders">Home</a>
+        <a href="/about" class="folders">Sobre</a>
+        <a href="/recipe" class="folders">Receitas</a>
+      </div>
+    </header>
+    <div id="frontPost">
+      <img src="{{ index.frontPostImage}}" class="banner">
+    </div>
+
+    <section class="cards">
+      <div class="card">
+        <div class="menuImg">
+          <img src="{{ receita.image }}" class="cardImage">
+        </div>
+
+        <div class="menuTitle">
+          {{ receita.title }}
+        </div>
+
+        <div class="menuAuthor">
+          {{ receita.author }}
+        </div>
+
+        <div class="menuIngredients">
+          <h3>Ingredientes</h3>
+
+          {% for item in receita.ingredients%}
+
+            <ul>
+              <li>{{ item }};</li>
+            </ul>
+
+          {% endfor %}
+
+        </div>
+
+        <div class="menuPreparation">
+          <h3>Preparação</h3>
+          {{ receita.preparation}}
+        </div>
+
+        <div class="menuInformation">
+          <h3>Informação</h3>
+          {{ receita.information}}
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>{{ aboutRecipe.footer }}</p>
+    </footer>
+
+  </body>
+
+</html>
